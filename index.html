@@ -3,40 +3,42 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Honey — Product</title>
-  <meta name="description" content="Honey — a simple product landing page." />
+  <title>Snapcell — Coming Soon</title>
+  <meta name="description" content="Snapcell — a coming soon page for a spreadsheet interacter." />
   <style>
     :root{
       --bg:#0b0f14; --card:#111827; --text:#e5e7eb; --muted:#9ca3af;
-      --accent:#f59e0b; --line:rgba(255,255,255,.08);
+      --accent:#22c55e; --line:rgba(255,255,255,.08);
     }
     *{box-sizing:border-box}
     body{
       margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      background:radial-gradient(800px 400px at 10% 10%, rgba(245,158,11,.22), transparent 60%),
-                 radial-gradient(700px 350px at 90% 20%, rgba(245,158,11,.12), transparent 55%),
+      background:radial-gradient(800px 400px at 12% 12%, rgba(34,197,94,.22), transparent 60%),
+                 radial-gradient(700px 350px at 88% 18%, rgba(34,197,94,.12), transparent 55%),
                  var(--bg);
       color:var(--text);
     }
     .wrap{max-width:980px;margin:0 auto;padding:28px 18px 60px}
+
     header{
       display:flex;align-items:center;justify-content:space-between;gap:12px;
       border:1px solid var(--line); background:rgba(17,24,39,.6);
       backdrop-filter: blur(10px);
       border-radius:16px; padding:14px 16px;
     }
-    .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.2px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px}
     .logo{
       width:34px;height:34px;border-radius:10px;
-      background:linear-gradient(135deg, #fbbf24, #f59e0b);
-      box-shadow: 0 12px 30px rgba(245,158,11,.25);
-      display:grid;place-items:center;color:#111827;font-weight:900;
+      background:linear-gradient(135deg, #86efac, #22c55e);
+      box-shadow: 0 12px 30px rgba(34,197,94,.22);
+      display:grid;place-items:center;color:#052e16;font-weight:950;
     }
     nav a{color:var(--muted);text-decoration:none;margin-left:12px;font-size:14px}
     nav a:hover{color:var(--text)}
+
     .hero{
       margin-top:26px;
-      display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:stretch;
+      display:grid;grid-template-columns:1.15fr .85fr;gap:18px;align-items:stretch;
     }
     .card{
       border:1px solid var(--line); background:rgba(17,24,39,.6);
@@ -45,49 +47,57 @@
     }
     h1{margin:0 0 10px;font-size:42px;line-height:1.08}
     p{margin:0 0 14px;color:var(--muted);line-height:1.55}
+
     .badge{
       display:inline-flex;align-items:center;gap:8px;
-      font-size:13px;color:#111827;background:rgba(245,158,11,.95);
-      padding:6px 10px;border-radius:999px;font-weight:700;
+      font-size:13px;color:#052e16;background:rgba(34,197,94,.95);
+      padding:6px 10px;border-radius:999px;font-weight:800;
     }
     .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
     .btn{
       display:inline-flex;align-items:center;justify-content:center;
       padding:10px 14px;border-radius:12px;text-decoration:none;
-      font-weight:700;font-size:14px;border:1px solid var(--line);
+      font-weight:800;font-size:14px;border:1px solid var(--line);
+      cursor:pointer;
     }
-    .btn.primary{background:var(--accent);color:#111827;border-color:transparent}
-    .btn.primary:hover{filter:brightness(1.05)}
+    .btn.primary{background:var(--accent);color:#052e16;border-color:transparent}
+    .btn.primary:hover{filter:brightness(1.06)}
     .btn.ghost{color:var(--text);background:transparent}
-    .btn.ghost:hover{border-color:rgba(245,158,11,.45)}
+    .btn.ghost:hover{border-color:rgba(34,197,94,.55)}
+
     .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
     .stat{border:1px solid var(--line);border-radius:14px;padding:12px}
     .stat b{display:block;font-size:16px}
     .stat span{color:var(--muted);font-size:12px}
+
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
     .feat{border:1px solid var(--line);border-radius:16px;padding:16px;background:rgba(255,255,255,.02)}
     .feat h3{margin:0 0 8px;font-size:16px}
     .feat p{margin:0;color:var(--muted);font-size:13px}
+
     .mock{
       height:100%;display:flex;flex-direction:column;justify-content:space-between;gap:12px;
-      background:linear-gradient(180deg, rgba(245,158,11,.12), transparent 55%);
+      background:linear-gradient(180deg, rgba(34,197,94,.12), transparent 55%);
     }
     .mock .panel{
-      border:1px dashed rgba(245,158,11,.35);
+      border:1px dashed rgba(34,197,94,.38);
       border-radius:16px;padding:14px;background:rgba(0,0,0,.15);
       color:var(--muted);font-size:13px
     }
+
     form{display:flex;gap:10px;margin-top:10px}
     input{
       flex:1;padding:10px 12px;border-radius:12px;
       border:1px solid var(--line);background:rgba(0,0,0,.2);color:var(--text);
       outline:none;
     }
-    input:focus{border-color:rgba(245,158,11,.55)}
+    input:focus{border-color:rgba(34,197,94,.65)}
+
     footer{
       margin-top:26px;color:var(--muted);font-size:12px;
       display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap
     }
+
     @media (max-width:860px){
       .hero{grid-template-columns:1fr}
       h1{font-size:36px}
@@ -100,82 +110,91 @@
   <div class="wrap">
     <header>
       <div class="brand">
-        <div class="logo">H</div>
-        <div>Honey</div>
+        <div class="logo">S</div>
+        <div>Snapcell</div>
       </div>
       <nav>
         <a href="#features">Features</a>
-        <a href="#how">How it works</a>
-        <a href="#contact">Contact</a>
+        <a href="#preview">Preview</a>
+        <a href="#contact">Notify</a>
       </nav>
-      <a class="btn primary" href="#contact">Get early access</a>
+      <a class="btn primary" href="#contact">Get notified</a>
     </header>
 
     <section class="hero">
       <div class="card">
-        <span class="badge">Product • Honey</span>
-        <h1>Honey helps teams ship faster with less noise.</h1>
+        <span class="badge">Coming Soon • Snapcell</span>
+        <h1>Snapcell — a spreadsheet interacter, built for speed.</h1>
         <p>
-          A minimal landing page you can deploy on GitHub Pages and map to your subdomain.
-          Replace this text with your real value proposition.
+          Interact with spreadsheets like an app: quick edits, clean views, and frictionless sharing.
+          Launching soon.
         </p>
 
         <div class="cta">
-          <a class="btn primary" href="#contact">Request demo</a>
-          <a class="btn ghost" href="#features">See features</a>
+          <a class="btn primary" href="#contact">Join the waitlist</a>
+          <a class="btn ghost" href="#features">See what’s planned</a>
         </div>
 
         <div class="stats">
-          <div class="stat"><b>Fast</b><span>Simple setup</span></div>
-          <div class="stat"><b>Clean</b><span>Single-page</span></div>
-          <div class="stat"><b>Ready</b><span>GitHub Pages</span></div>
+          <div class="stat"><b>Fast</b><span>Instant actions</span></div>
+          <div class="stat"><b>Simple</b><span>Minimal UI</span></div>
+          <div class="stat"><b>Secure</b><span>Access controls</span></div>
         </div>
 
         <div id="features" class="grid">
           <div class="feat">
-            <h3>Industry-ready</h3>
-            <p>Clear messaging, strong sections, easy to customize.</p>
+            <h3>Smart Cells</h3>
+            <p>Interact with rows and columns using commands and shortcuts.</p>
           </div>
           <div class="feat">
-            <h3>Lightweight</h3>
-            <p>No build step required. Just upload and publish.</p>
+            <h3>Clean Views</h3>
+            <p>Turn messy sheets into focused dashboards and filtered views.</p>
           </div>
           <div class="feat">
-            <h3>Professional</h3>
-            <p>Good typography and spacing, responsive layout.</p>
+            <h3>Quick Share</h3>
+            <p>Share a view, not the whole sheet. Keep noise out.</p>
           </div>
         </div>
       </div>
 
-      <aside class="card mock" id="how">
+      <aside class="card mock" id="preview">
         <div>
-          <h2 style="margin:0 0 8px;font-size:18px">How it works</h2>
-          <div class="panel">1) Create a GitHub repo</div>
-          <div class="panel">2) Add this file as <b>index.html</b></div>
-          <div class="panel">3) Enable GitHub Pages</div>
-          <div class="panel">4) Set Custom Domain: <b>honey.demo.com</b></div>
-          <div class="panel">5) Add CNAME in Hostinger DNS: <b>honey → youruser.github.io</b></div>
+          <h2 style="margin:0 0 8px;font-size:18px">Preview</h2>
+          <div class="panel">• Import: Excel / Google Sheets / CSV</div>
+          <div class="panel">• Interact: filter, sort, edit, validate</div>
+          <div class="panel">• Automate: simple rules & actions</div>
+          <div class="panel">• Export: CSV / XLSX snapshots</div>
         </div>
 
         <div id="contact">
-          <h2 style="margin:0 0 8px;font-size:18px">Get early access</h2>
-          <p style="margin:0 0 10px">Collect leads here (replace with your form tooling later).</p>
-          <form onsubmit="event.preventDefault(); alert('Thanks! We will reach out.');">
-            <input type="email" placeholder="you@company.com" required />
+          <h2 style="margin:0 0 8px;font-size:18px">Get notified</h2>
+          <p style="margin:0 0 10px">Add your email to receive launch updates.</p>
+          <form id="waitlistForm">
+            <input id="email" type="email" placeholder="you@company.com" required />
             <button class="btn primary" type="submit">Notify me</button>
           </form>
+          <p id="msg" style="margin:10px 0 0;color:var(--muted);font-size:13px"></p>
         </div>
       </aside>
     </section>
 
     <footer>
-      <div>© <span id="y"></span> Honey</div>
+      <div>© <span id="y"></span> Snapcell</div>
       <div>A product by Your Startup • Built by Your Name</div>
     </footer>
   </div>
 
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
+
+    // Demo-only form handling (replace with your backend / form tool later)
+    document.getElementById("waitlistForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const email = document.getElementById("email").value.trim();
+      const msg = document.getElementById("msg");
+      msg.textContent = email ? `Thanks — we’ll email ${email} when Snapcell launches.` : "Thanks!";
+      e.target.reset();
+    });
   </script>
 </body>
 </html>
